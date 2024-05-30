@@ -12,9 +12,20 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#pragma once
+#include <libhal-ssdtech/ssdtech.hpp>
 
-namespace hal::__device__ {   // NOLINT
-struct __device___replace_me  // NOLINT
-{};
-}  // namespace hal::__device__
+#include <boost/ut.hpp>
+
+namespace hal::ssdtech {
+void ssdtech_test()
+{
+  using namespace boost::ut;
+  using namespace std::literals;
+
+  "ssdtech::create()"_test = []() {
+    // Setup
+    // Exercise
+    // Verify
+  };
+};
+}  // namespace hal::ssdtech
